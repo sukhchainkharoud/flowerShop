@@ -6,8 +6,10 @@ app.get('/', (req, res, next) => {
     
     res.sendfile('./public/the flowershop.html');
 
-})
+});
 
-app.listen(3000, () => {
+var port = process.env.PORT || 3000;
+
+app.listen(port, () => {
     console.log("Server is up on port 3000");
 })
