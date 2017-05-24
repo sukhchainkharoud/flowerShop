@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      background: #000000;
+      font: 400 15px/1.8 Lato, sans-serif;
+     
+  }
+h2{
+  color:#000000;
+   font-style: bold ;
+   letter-spacing: 4px;
+   font-family: 'Lucida Sans';
+}
+   h4{ color:#4f4d4d;
+   font-style: bold ;
+   letter-spacing: 4px;
+   font-family: 'Lucida Sans';
+   
+   } 
+
+  h3 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #ff0000;
+  }
+  .container {
+      padding: 80px 120px;
+       background: #0d0d0d;
+       color:#e58414;
+  }
+
+  .bg-1 {
+      background: #000000;
+      color: #000000;
+  }
+  .bg-1 h3 {color: #ff0000;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+     background:#1a1a1a;
+border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      
+  }
+  .list-group-item:last-child {
+        background:#1a1a1a;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      background: #000000;
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #000000;
+      color: goldenrod;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #4f4e4c;
+      color: #000000;
+  }
+  .modal-header,  .close {
+      background-color: #1a7a1f;
+      color: #000000 !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  </style>
+</head>
+<body> 
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">FLOWERVASES</h3>
+    <p class="text-center">Buy your favourite flowers vases ! </p>
+         <div class="row text-center">
+      <div class="col-sm-4">
+       
+        <div class="thumbnail">
+          <img src="ROUND%20PEACOCK.jpg"  width="400" height="300">
+          <h4>ROUND PEACOCK VASE </h4>
+          <p><strong>Price-Rs300</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="PEACOCK%20VASE.jpg"  width="400" height="300">
+          <h4>PEACOCK CRAFTED VASE</h4>
+          <p><strong>Price-Rs350</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="WHITE%20VASE.jpg" width="400" height="300">
+         <h4>WHITE VASE</h4>
+          <p><strong>Price-Rs250</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+    </div>
+
+
+         <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="SQUARE%20VASE.jpg"  width="400" height="300">
+          <h4>SQUARE VASE</h4>
+          <p><strong>Price-Rs350</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="TRANSPARENT%20FLASKVASE.jpg"  width="400" height="300">
+         <h4>TRANSPARENT VASE </h4>
+          <p><strong>Price-Rs170</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="MAGNOLIA%20VASE.jpg" width="400" height="300">
+          <h4>MONGOLIA VASE</h4>
+          <p><strong>Price-Rs370</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+    </div>
+  <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="VINTAGE%20VASE.jpg"  width="400" height="300">
+          <h4>VINTAGE VASE</h4>
+          <p><strong>Price-Rs400</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="PINK%20VASE.jpg"  width="400" height="300">
+          <h4> PINK VASE </h4>
+          <p><strong>Price-Rs100</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="HIGHHEEL%20VASE.jpg" width="400" height="300">
+          <h4>HIGHHEEL VASE</h4>
+          <p><strong>Price-Rs500</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+    </div>
+  <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="RED%20FLOWERVASE.jpg"  width="400" height="300">
+          <h4>RED GLASS VASE</h4>
+          <p><strong>Price-Rs350</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="MARBLE%20VASE.jpg"  width="400" height="300">
+          <h4> MARBLE VASE</h4>
+          <p><strong>Price-Rs210</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="WINE%20BOTTLE%20VASE.jpg" width="400" height="300">
+          <h4>WINE BOTTLE VASE</h4>
+          <p><strong>Price-Rs400</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="BLUE%20CYLINDER%20VASE.jpg"  width="400" height="300">
+          <h4>BLUE CYLINDER VASE</h4>
+          <p><strong>Price-Rs300</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="BICYCLE%20VASE.jpg"  width="400" height="300">
+          <h4> BICYCLE VASE</h4>
+          <p><strong>Price-Rs250</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="SKYBLUE%20SMALL%20VASE.jpg" width="400" height="300">
+          <h4>SKYBLUE SMALL VASE</h4>
+          <p><strong>Price-Rs150</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+    </div>
+     <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="CRAFTED%20VASE.jpg"  width="400" height="300">
+          <h4>CRAFTED VASE</h4>
+          <p><strong>Price-Rs200</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="LEGEND%20VASE.jpg"  width="400" height="300">
+          <h4> RED LEGEND VASE</h4>
+          <p><strong>Price-Rs250</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="BASKET%20VASE.jpg" width="400" height="300">
+          <h4>GLASS BASKET VASE</h4>
+          <p><strong>Price-Rs550</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="FUNNEL%20VASE.jpg"  width="400" height="300">
+          <h4>WATER FUNNEL VASE</h4>
+          <p><strong>Price-Rs400</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="FLAT%20BASKET%20VASE.jpg"  width="400" height="300">
+          <h4>FLAT BASKET VASE</h4>
+          <p><strong>Price-Rs350</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="LAMP%20VASE.jpg" width="400" height="300">
+          <h4>LAMP VASE</h4>
+          <p><strong>Price-Rs500</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="GUNNY%20BAG%20VASE.jpg"  width="400" height="300">
+          <h4>GUNNY BAG VASE</h4>
+          <p><strong>Price-Rs120</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="CERAMIC%20VASE.jpg"  width="400" height="300">
+          <h4> CERAMIC VASE</h4>
+          <p><strong>Price-Rs130</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+     
+        <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="handicraft.jpg" width="400" height="280">
+          <h4>HANDICRAFT VASE</h4>
+          <p><strong>Price-Rs300</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+     </div>
+
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="PINK%20CUP.jpg"  width="400" height="300">
+          <h4>PINK CUP VASE</h4>
+          <p><strong>Price-Rs120</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="TINY%20VASE.jpg"  width="400" height="300">
+          <h4> TINY VASE</h4>
+          <p><strong>Price-Rs130</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+     <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="CANDLE%20VASE.jpg" width="400" height="280">
+          <h4>CANDLE VASE</h4>
+          <p><strong>Price-Rs700</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+     </div>
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="EXCLUSIVE%20POT%20BLUE.jpg"  width="400" height="300">
+          <h4>EXCLUSIVE BLUE POT </h4>
+          <p><strong>Price-Rs400</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="EXCLUSIVE%20POT.jpg"  width="400" height="300">
+          <h4>EXCLUSIVE YELLOW POT </h4>
+          <p><strong>Price-Rs400</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+     <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="KUNDAN%20VASE.jpg" width="400" height="280">
+          <h4>KUNDAN VASE</h4>
+          <p><strong>Price-Rs700</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+     </div>
+   
+      <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="BLUE%20MARBEL.jpg"  width="400" height="300">
+          <h4>BLUE MARBEL </h4>
+          <p><strong>Price-Rs320</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="CRAFTEDD.jpg"  width="400" height="300">
+          <h4>SIMPLY CRAFTED </h4>
+          <p><strong>Price-Rs530</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+     <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="COPPER%20CRAFTED.jpg" width="400" height="280">
+          <h4>COPPER CRAFTED</h4>
+          <p><strong>Price-Rs700</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+     </div>
+      
+        <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="LEGENDD.jpg"  width="400" height="300">
+          <h4>GLAMOUR VASE</h4>
+          <p><strong>Price-Rs420</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="mercury.jpg"  width="400" height="300">
+          <h4>MERCURY EDITION </h4>
+          <p><strong>Price-Rs450</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+     <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="purple.jpg" width="400" height="280">
+          <h4>PURPLE GLASS VASE</h4>
+          <p><strong>Price-Rs280</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+     </div>
+    
+       <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="DIAMOND%20VASE.jpg"  width="400" height="300">
+          <h4>DIAMOND VASE</h4>
+          <p><strong>Price-Rs520</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="WOODEN%20WALL%20VASE.jpg"  width="400" height="300">
+          <h4> WOODEN VASE</h4>
+          <p><strong>Price-Rs400</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+     <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="SPECIAL.jpg" width="400" height="280">
+          <h4>CRAFTED-URN VASE</h4>
+          <p><strong>Price-Rs600</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+     </div>
+      
+    </div>
+    </div>
+      
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">�</button>
+          <h2><span class="glyphicon glyphicon-lock"></span> BUY FlowerVase</h2>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+           
+            <div class="form-group">
+              <label for="username"><span class="glyphicon glyphicon-user"></span> NAME</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter your First & Last name">
+            </div>
+           
+            <div class="form-group">
+              <label for="username"><span class="glyphicon glyphicon-home"></span> ADDRESS </label>
+              <input type="text" class="form-control" id="username" placeholder="Enter your address">
+            </div>
+
+            <div class="form-group">
+              <label for="number"><span class="glyphicon glyphicon-phone-alt"></span> PHONE NUMBER</label>
+              <input type="number" class="form-control" id="username" placeholder="Enter your phone number">
+            </div>
+            
+            <div class="form-group">
+              <label for="username"> <span class="glyphicon glyphicon-blackboard"></span> Name of flowerVase</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter the name of flowerVase">
+            </div>
+            
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Number of Vases</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+
+              <button type="submit" class="btn btn-block">ORDER NOW
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>

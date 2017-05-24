@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>IP project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      background: #000000;
+      font: 400 15px/1.8 Lato, sans-serif;
+     
+  }
+h2{
+  color:#000000;
+   font-style: bold ;
+   letter-spacing: 4px;
+   font-family: 'Lucida Sans';
+}
+   h4{ color:#4f4d4d;
+   font-style: bold ;
+   letter-spacing: 4px;
+   font-family: 'Lucida Sans';
+   
+   } 
+
+  h3 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #ff0000;
+  }
+  .container {
+      padding: 80px 120px;
+       background: #0d0d0d;
+       color:#e58414;
+  }
+
+  .bg-1 {
+      background: #000000;
+      color: #000000;
+  }
+  .bg-1 h3 {color: #ff0000;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+     background:#1a1a1a;
+border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      
+  }
+  .list-group-item:last-child {
+        background:#1a1a1a;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      background: #000000;
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #000000;
+      color: goldenrod;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #4f4e4c;
+      color: #000000;
+  }
+  .modal-header,  .close {
+      background-color: #1a7a1f;
+      color: #000000 !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+ 
+  
+  </style>
+</head>
+<body> 
+
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">TREES</h3>
+    <p class="text-center">Buy your favourite Trees ! </p>
+         <div class="row text-center">
+      <div class="col-sm-4">
+       
+        <div class="thumbnail">
+          <img src="SOGO PALM TREE.jpg"  width="400" height="300">
+          <h4>SOGO PALM TREE </h4>
+          <p><strong>Price-Rs 700</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="FLORIDA PALM.jpg"  width="400" height="300">
+          <h4>FLORIDA PALM</h4>
+          <p><strong>Price-Rs900</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="BISMARCK PALM.jpg" width="400" height="300">
+         <h4>BISMARCK PALM</h4>
+          <p><strong>Price-Rs2000</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+    </div>
+
+
+         <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="MANGO TREE.jpg"  width="400" height="300">
+          <h4>MANGO TREE </h4>
+          <p><strong>Price-Rs250</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="ORANGE TREE.jpg"  width="400" height="300">
+         <h4>ORANGE TREE </h4>
+          <p><strong>Price-Rs170</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="CHRISTMAS TREE.jpg" width="400" height="300">
+          <h4>CHRISTMAS TREE</h4>
+          <p><strong>Price-Rs400</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+    </div>
+  <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="BEACH PALM.jpg"  width="400" height="300">
+          <h4>BEACH PALM</h4>
+          <p><strong>Price-Rs1000</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="ASHOKA TREE.jpg"  width="400" height="300">
+          <h4>ASHOKA TREE</h4>
+          <p><strong>Price-Rs300</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="GUAVA TREE.jpg" width="400" height="300">
+          <h4>GUAVA TREE </h4>
+          <p><strong>Price-Rs200</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+    </div>
+
+
+<div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Neem Tree.jpg"  width="400" height="300">
+          <h4>NEEM TERE</h4>
+          <p><strong>Price-Rs1000</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="BOTTLE PALM.png"  width="400" height="300">
+          <h4>BOTTLE PALM</h4>
+          <p><strong>Price-Rs300</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="EUCALYPTUS TREE.jpg" width="400" height="300">
+          <h4>EUCALYPTUS TREE </h4>
+          <p><strong>Price-Rs200</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">�</button>
+          <h2><span class="glyphicon glyphicon-lock"></span> BUY TREES</h2>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+           
+            <div class="form-group">
+              <label for="username"><span class="glyphicon glyphicon-user"></span> NAME</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter your First & Last name">
+            </div>
+           
+            <div class="form-group">
+              <label for="username"><span class="glyphicon glyphicon-home"></span> ADDRESS </label>
+              <input type="text" class="form-control" id="username" placeholder="Enter your address">
+            </div>
+
+            <div class="form-group">
+              <label for="number"><span class="glyphicon glyphicon-phone-alt"></span> PHONE NUMBER</label>
+              <input type="number" class="form-control" id="username" placeholder="Enter your phone number">
+            </div>
+            
+            <div class="form-group">
+              <label for="username"> <span class="glyphicon glyphicon-tree-deciduous"></span> Name of Tree</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter the name of tree">
+            </div>
+            
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Number of Trees</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+
+              <button type="submit" class="btn btn-block">ORDER NOW
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
